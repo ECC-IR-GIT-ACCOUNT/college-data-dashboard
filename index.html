@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="Dev Bhagat" />
+  <title>College Data Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Elgin Community College - Key Metrics</h1>
+
+  <div class="data-boxes">
+    
+    <div class="box box0">
+      <h3  title = "Percentage of all student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size" >Graduation Rate After 8 years (All Students) <span id="reportingYearGrad8">loading</span></h3>
+      <p id="gradRate8Years">loading...</p>
+    </div>
+
+    <div class="box box1">
+      <h3 title = "Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size">Transfer Rate After 8 years (All Students) <span id="reportingYearTransfer8">loading</span></h3>
+      <p id="transferRate8Years">loading...</p>
+    </div>
+
+    <div class="box box2">
+      <h3 title = "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)">Completion Rate 150% of Normal Time (First Time, Full-Time Only) <span id="reportingYearCompletion">loading</span></h3>
+      <p id="completionRate">loading...</p> 
+    </div>
+
+    <div class="box box3">
+      <h3 title = "First-time, full-time student retention rate at less-than-four-year institutions">Retention Rate Full Time <span id="reportingYearFT">loading</span></h3>
+      <p id="fullTime">loading...</p>
+    </div>
+
+    <div class="box box4">
+      <h3 title = "First-time, part-time student retention rate at less-than-four-year institutions">Retention Rate Part Time <span id="reportingYearPT">loading</span></h3>
+      <p id="partTime">loading...</p>
+    </div>
+
+    <div class="box box5">
+      <h3 title = "Unduplicated count of undergraduate students enrolled during a 12 month period">Overall Annual Enrollment <span id="reportingYearoverallEnrollment">loading</span></h3>
+      <p id="overallEnrollment">loading...</p>
+    </div>
+
+    <div class="box box6">
+      <h3 title = "Enrollment of undergraduate certificate/degree-seeking students">Degree Seeking Students <span id="reportingYearDegreeSeek">loading</span></h3>
+      <p id="studentSize">loading...</p>
+    </div>
+
+    <div class="box box7">
+      <h3 title = "Undergraduate student to instructional faculty ratio">Student to Faculty Ratio <span id="reportingYearRatio">loading</span></h3>
+      <p id="studentToFaculty">loading...</p>
+    </div>
+
+    <div class="box box8">
+      <h3 title = "Share of undergraduate, degree-/certificate-seeking students who are part-time">% Part Time Students <span id="reportingYearPartTimeShare">loading</span></h3>
+      <p id="partTimeShare">loading...</p>
+    </div>
+
+    <div class="box box9">
+      <h3 title = "Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size">% Pell Grant Recipient<span id="reportingYearPell">loading</span></h3>
+      <p id="pellAward">loading...</p>
+    </div>
+
+    <div class="box box10">
+      <h3 title = "Percentage of undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30">Student Loan Default Rate (All Students) <span id="reportingYearDefault">loading</span></h3>
+      <p id="defaultRate">loading...</p>
+    </div>
+    
+  </div>
+
+  <br />
+  <a href="https://college-scope.onrender.com" target="_blank">
+    CLICK ON THIS BUTTON TO BE REDIRECTED TO A MORE INTERACTIVE DASHBOARD
+  </a>
+  <br />
+
+  <script src="reportingYears.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

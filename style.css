@@ -1,0 +1,117 @@
+/* Reset some defaults */
+body, h1, h3, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 32px 0 24px 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+.data-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto 24px auto;
+  padding: 0 12px;
+}
+
+.box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding: 20px 18px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+  border-left: 4px solid #4f8cff;
+}
+
+.box:hover {
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.16);
+  border-left: 5px solid #2c3e50;
+}
+
+.box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4f8cff;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 6px;
+}
+
+.box h3 span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #888;
+  flex-shrink: 0;
+}
+
+.box p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin: 32px auto 0 auto;
+  font-size: 1.1rem;
+  color: #fff;
+  background: #4f8cff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+  max-width: 480px;
+}
+
+a:hover {
+  background: #2c3e50;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .data-boxes {
+    grid-template-columns: 1fr;
+    padding: 0 8px;
+    gap: 12px;
+  }
+  .box {
+    padding: 16px 12px 12px 12px;
+  }
+  .box h3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 18px 0 12px 0;
+  }
+}
