@@ -1,6 +1,6 @@
 const reportingYears = {
   retentionRate: "FY 2024",
-  completionRate: "FY YYYY",
+  completionRate: "FY 2020",
   ratio: "FY YYYY",
   degreeSeeking: "FY YYYY",
   partTimeShare: "FY YYYY",
